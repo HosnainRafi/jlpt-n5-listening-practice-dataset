@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "asset_required_fields": [
+    "id",
+    "collection",
+    "kind",
+    "path",
+    "source_filename",
+    "duration_seconds",
+    "codec",
+    "bytes",
+    "sha256",
+    "verified"
+  ],
+  "collections": [
+    "textbook",
+    "model-test"
+  ],
+  "path_rule": "All paths are repository-relative POSIX paths; use path as the bundled asset path in the APK.",
+  "ordering_rule": "Textbook assets sort by lesson_number, kind, source_filename; model-test assets sort by source_group, kind, track_number, source_filename.",
+  "answer_rule": "Reference OCR is informational only. Use the preserved canonical PDF for answer verification."
+}
